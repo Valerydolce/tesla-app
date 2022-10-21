@@ -3,18 +3,18 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>com.mt</groupId>
-	<artifactId>maven-web-application</artifactId>
+	<artifactId>tesla-app</artifactId>
 	<packaging>war</packaging>
 	
 	<version>0.0.2-SNAPSHOT</version> 
 	
-	<name>maven-web-application</name>
+	<name>tesla-app</name>
 
 	<description>Maven Web Project for Java Project</description>
 
 	<organization>
-		<name>Landmark Technologies</name>
-		<url>http://landmarktechnologies.com/</url>
+		<name>yvalcorp</name>
+		<url>yvalcorp.com</url>
 	</organization>
 
 	<properties>
@@ -22,9 +22,9 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http:172.31.22.207:9000/</sonar.host.url>
+		<sonar.host.url>http://192.168.56.8:9000/</sonar.host.url>
 		<sonar.login>admin</sonar.login>
-		<sonar.password>admin</sonar.password>
+		<sonar.password>school123</sonar.password>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
@@ -95,20 +95,20 @@
 	<distributionManagement>
 	    <repository>
 	      <id>nexus</id>
-	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://52.53.227.31:8191/landmark/repository/tesla-fe-releases/</url>
+	      <name>Yvalcorp Releases Nexus Repository</name>
+	      <url>http://192.168.56.7:8081/repository/tesla-app-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://52.53.227.31:8191/landmark/repository/tesla-fe-snapshots/</url>
+	      <name>Yvalcorp Snapshot Nexus Repository </name>
+	      <url>http://192.168.56.7:8081/repository/tesla-app-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
 	
 	<build>
-		<finalName>maven-web-app</finalName>
+		<finalName>tesla-app</finalName>
 		
 		<plugins>
 			<plugin>
@@ -128,7 +128,7 @@
 				<configuration>
 					<scanIntervalSeconds>10</scanIntervalSeconds>
 					<webApp>
-						<contextPath>/maven-web-application</contextPath>
+						<contextPath>/tesla-app</contextPath>
 					</webApp>
 				</configuration>
 			</plugin>
@@ -141,7 +141,7 @@
 					<downloadSources>true</downloadSources>
 					<downloadJavadocs>true</downloadJavadocs>
 					<wtpversion>2.0</wtpversion>
-					<wtpContextName>maven-web-application</wtpContextName>
+					<wtpContextName>tesla-app</wtpContextName>
 				</configuration>
 			</plugin>
 			
