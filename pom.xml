@@ -6,7 +6,7 @@
 	<artifactId>tesla-app</artifactId>
 	<packaging>war</packaging>
 	
-	<version>0.0.2-SNAPSHOT</version> 
+	<version>0.0.3-SNAPSHOT</version> 
 	
 	<name>tesla-app</name>
 
@@ -108,7 +108,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>tesla-app</finalName>
+		<finalName>tesla-app-stage</finalName>
 		
 		<plugins>
 			<plugin>
