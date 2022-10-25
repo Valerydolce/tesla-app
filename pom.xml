@@ -6,7 +6,7 @@
 	<artifactId>tesla-app</artifactId>
 	<packaging>war</packaging>
 	
-	<version>0.0.2-SNAPSHOT</version> 
+	<version>0.0.4-SNAPSHOT</version> 
 	
 	<name>tesla-app</name>
 
@@ -102,13 +102,13 @@
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Yvalcorp Snapshot Nexus Repository </name>
-	      <url>http://192.168.56.7:8081/repository/tesla-app-snapshot/</url>
+	      <url>http://192.168.56.7:8081/repository/tesla-test/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
 	
 	<build>
-		<finalName>tesla-app</finalName>
+		<finalName>tesla-app-test</finalName>
 		
 		<plugins>
 			<plugin>
